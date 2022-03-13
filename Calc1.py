@@ -1,9 +1,9 @@
 # начнем просто с калькулятора
 
 counter_while = 0
-accept = 'y'
+new_loop = 'y'
 
-while accept == 'y':
+while new_loop == 'y':
     counter_while = counter_while + 1
     counter = 0
     first_number = input('введите первое число ')
@@ -27,12 +27,12 @@ while accept == 'y':
         print("не стоит делить на ноль")
 
     print(" Количество выполненных циклов операций : " + str(counter_while))
-    accept = input(" Ещё разок? (y/n) : ")
-    if accept == "y":
+    new_loop = input(" Ещё разок? (y/n) : ")
+    if new_loop == "y":
         continue
-    if accept == "n":
-        print(" Всего наилучшего!")
+    if new_loop == "n":
+        print(" Спасибо. До новых встреч")
         break
-    if accept != "y" or "n":
+    if new_loop != "y" or "n":
        print("введен неправильный символ")
-       accept = input(" Ещё разок? (y/n) : ")
+       new_loop = input(" Ещё разок? (y/n) : ")
